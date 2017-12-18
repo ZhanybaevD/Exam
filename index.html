@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam</title>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="syle.css">
+</head>
+<body>
+<button id="open" onclick="OpenMark()"  >New car form</button>
+		<ul id="Ul1"></ul>
+<!-- 1 Modal -->
+		<div id="id01" class="w3-modal">
+				<div class="w3-modal-content w3-animate-zoom">
+					<div class="w3-container w3-red">
+						<button id="clsModal" onclick="CloseMark()" class="w3-button" style="position:absolute;">Close</button>
+					</br>
+						<h3>Add mark of car</h3>
+					</div>
+					<div style="position:relative;">
+						
+							<input id="MarkOfCar" type="" name="">
+								<select class="country">
+									<option value="Japan">Japan</option>
+									<option value="Germany">Germany</option>
+									<option value="USA">USA</option>
+								</select>
+								</br>
+							<button id="add">Add new car</button>	
+					<div style="background-color:black;">
+					</div>
+				</div>
+
+			</div>
+</div>
+
+<!-- 2 Modal -->
+	<div id="id02" class="w3-modal">
+				<div class="w3-modal-content w3-animate-zoom">
+					<div class="w3-container w3-red">
+						<h3 id="TitleOf"></h3>
+					</div>
+					<div>
+						<p id="ShowCount"></p>
+					</br>
+					 <button id="add">Add new model</button>	
+					<ul id="Ul2"></ul>
+					</div>
+				
+			<div class="w3-container w3-red">
+					<button id="clsModal" onclick="CloseModel()" class="w3-button" style="position:absolute;">Close</button>
+			</div>
+				</div>
+	</div>
+
+
+<div id="ModalEdit" class="w3-modal">
+				<div class="w3-modal-content w3-animate-zoom">
+					<div class="w3-container w3-red">
+						<h3 >Edit</h3>
+					</div>
+					<div>
+						<p id="ShowCount"></p>
+					</br>
+					<input id="InpEdit" type="" name="">	
+				
+								<select class="EditCount">
+									<option value="Japan">Japan</option>
+									<option value="Germany">Germany</option>
+									<option value="USA">USA</option>
+								</select>
+					</div>
+				<button id="Save">Save</button>
+				
+			<div class="w3-container w3-red">
+					<button id="clsModal" onclick="CloseEdit()" class="w3-button" style="position:absolute;">Close</button>
+			</div>
+				</div>
+	</div>
+
+
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
